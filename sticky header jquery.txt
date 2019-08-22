@@ -1,0 +1,14 @@
+-----js-----
+
+$(window).scroll(function() {
+                var top = $(document).scrollTop();
+                if (top < 300) $(".top_nav").removeClass('fixed');
+                else $(".top_nav").addClass('fixed');
+            });
+
+
+-----css-----
+
+.fixed{
+position: fixed;
+}
